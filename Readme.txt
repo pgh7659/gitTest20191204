@@ -1,0 +1,50 @@
+[Git 주요 명령어]
+
+- git init
+ : git 저장소 초기화. init 이전에는 일반 폴더라고 보면됨.
+
+- git config
+ : git 설정
+
+- git status
+ : git 상태 확인. 변경사항 체크 및 브랜치 확인 등
+
+- git add
+ : git에서 사용할 수 있도록 만듬. 저장소에 새 파일을 추가하는 것은 아님.
+
+- git commit
+ : repository에 변경사항 반영.
+
+- git branch
+ : 새로운 branch를 생성
+
+- git checkout
+ : repository로 부터 checkout
+
+- git merge
+ : brach 에서 하던 작업을 병합
+
+- git push
+ : local repository -> online repository
+
+- git pull
+ : gitHub로 부터 변경사항을 가져온다.
+
+
+[Git 설정 요약]
+1. 사용자를 설정해준다.
+
+   git config --global user.name ""
+   git config --global user.email ""
+
+
+2. 온라인 저장소 만들기
+  gitHub에서 새로운 저장소 생성
+
+3. 로컬 저장소 만들기
+  사용하고자 하는 repository 생성
+
+4. 로컬 저장소 git init
+
+5. 로컬 저장소와 깃허브 저장소 연결
+  git remote add origin 깃저장소주소
