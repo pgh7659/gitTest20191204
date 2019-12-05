@@ -1,0 +1,39 @@
+1. 브라우저에 url 입력
+ http://www.naver.com
+
+2. HTTP Request
+ [Request]
+ GET / HTTP /1.1 : HTTP 전송방법과 프로토콜 버전
+ Host : 요청하는 서버 주소
+ User-Agent : OS/ 브라우저 정보
+ Accept : 클리이언트가 이해가능한 컨텐츠 타입
+ Accept-Language : 클리이언트 인식 언어
+ Accept-Encoding : 클라이언트 인코딩 방법
+ Connection : 전송 완료 후 접속 유지 정보(Keep-alive)
+ Upgrade-Insecure-Request : 신호를 보낼때 데이터 암호화 여부
+ Content-Type : 클라이언트에게 반환되어야하는 컨텐츠 유형
+ Content-Length : 본문 크기
+ 
+
+3. DNS 서버에서 ip 주소값 get
+ - local DNS에 없는 경우 root DNS로 ip 주소 값 요청
+
+4. 해당 서버에서 HTTP Response
+ [Response]
+ HTTP/1.1 200 ok : 프로토콜 버전과 응답상태
+ Access-Control-Allow-Origin : 서버에 타 사이트의 접근을 제한하는 방침
+ Connection : 전송 완료 후 접속 유지 정보(Keep-alive)
+ Content-Encoding : 미디어 타입을 압축한 방법
+ Date : 헤더가 만들어진 시간
+ ETag : 버전의 리소스를 식별하는 식별자
+ Keep-Alive : 연결에 대한 타임아웃과 요청 최대 개수 정보
+ Last-Modified : 웹 시간을 가지고 있다 수정되었을 때만 데이터 변경(캐시연관)
+ Server : 웹서버로 사용되는 프로그램 이름
+ Set-Cookie : 쿠키 정보
+ Transfer-Encoding : 인코딩 형식 지정
+ X-Frame-Option : frame/iframe/object 허용 여부
+
+ 5. Response Body 부분 브라우저 렌더링
+
+ 6. 화면 표출
+
