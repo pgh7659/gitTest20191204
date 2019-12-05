@@ -1,0 +1,18 @@
+[git configuration setting]
+
+1. git config 확인
+  git config --list
+
+2. git config 설정
+
+ - username, userEmail 지정
+  git config --global user.name ""
+  git config --global user.email ""
+
+ - git config 삭제
+  git config --unset user.name
+  git config --unset user.email
+
+  *global로 설정된 경우 global을 추가해주어야한다
+  git config --global --unset user.name
+  git config --global --unset user.email
